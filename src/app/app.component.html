@@ -1,0 +1,5 @@
+<app-navbar [titulo]="'Buscador De Noticias'"></app-navbar>
+<div class="container">
+<app-formulario (parametrosSeleccionados)="buscarNoticias($event)"></app-formulario>
+<app-estado-noticias [recibirNoticias]="listNoticia"></app-estado-noticias>
+</div>
